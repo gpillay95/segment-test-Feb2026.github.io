@@ -19,18 +19,21 @@
             color: #333;
         }
         /* Adding a slight semi-transparent box to keep your form readable */
-        form, h1, p {
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
-            max-width: 800px;
-        }
+        h1, p, form {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        border-radius: 10px;
+        display: block; /* This is the key change */
+        width: fit-content; /* Keeps the box from stretching across the whole screen */
+        margin-bottom: 10px;
+    }
     </style>
     </head> 
 <body> 
 <h1>What is your favorite Hill Station or Beaches to explore?</h1> 
+    
 <p>I am building a directory of the most stunning Beaches & Hill Station across the India</p>  
+    
 <form name="desert_travel" onsubmit="identify(event)">
     What is your favorite destination? (Hill station or Beaches)
     <br>
